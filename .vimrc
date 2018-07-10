@@ -10,6 +10,7 @@ Bundle 'jlanzarotta/bufexplorer'
 Bundle 'Spacegray'
 Bundle 'typescript-vim'
 Plugin 'wincent/command-t'
+Plugin 'davidhalter/jedi-vim'
 filetype plugin indent on
 set bs=2
 set ts=4
