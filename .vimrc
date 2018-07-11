@@ -12,6 +12,7 @@ Bundle 'typescript-vim'
 Plugin 'wincent/command-t'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'ap/vim-css-color'
 filetype plugin indent on
 set bs=2
 set ts=4
