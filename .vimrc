@@ -22,7 +22,7 @@ set ruler
 setlocal autoindent
 setlocal cindent
 setlocal smartindent
-set expandtab 
+set expandtab
 set shiftwidth=4
 let g:CommandTWildIgnore="*/dist,*/node_modules,*pyc"
 let NERDTreeIgnore = ['\.pyc$']
@@ -30,5 +30,11 @@ set wildignore+=*/dist,*/node_modules,*pyc
 syntax enable
 set background=dark
 colorscheme spacegray
+"Highlight trailing spaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+"Highlight line that pass 80 columns
+highlight ColorColumn guibg=#F2F2F2
+set colorcolumn=140
 "Remove all trailing whitespace by pressing F5
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
